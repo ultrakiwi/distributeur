@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>120</x>
+      <y>300</y>
+      <w>20</w>
+      <h>20</h>
+    </coordinates>
+    <panel_attributes>type=initial</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>120</x>
+      <y>300</y>
+      <w>130</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>230</x>
+      <y>270</y>
+      <w>240</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>affichageHeureActuelle
+--
+entry/entreeAffichageHeureActuelle
+do/afficherHeureActuelle</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>50</x>
+      <y>460</y>
+      <w>230</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>etatReglageHeureActuelle
+--
+entry/entreeReglageHeureActuelle
+do/reglageHeureActuelle
+BPh/incrHeureActuelle
+BPm/incrMinuteActuelle</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>450</x>
+      <y>730</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>etatReglageHeureReveil
+--
+entry/entreeReglageHeureReveil
+do/reglageHeureReveil
+BPh/incrHeureReveil
+BPm/incrMinuteReveil</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>330</y>
+      <w>150</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+BPMenu</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>560</x>
+      <y>550</y>
+      <w>80</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+BPMenu</panel_attributes>
+    <additional_attributes>10.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>240</x>
+      <y>60</y>
+      <w>240</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>reveil
+--
+entry/entreeReveil
+do/reveiller
+exit/couperReveil</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>120</y>
+      <w>120</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+EvActiverReveil</panel_attributes>
+    <additional_attributes>10.0;150.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>120</y>
+      <w>130</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+EvCouperReveil</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLState</id>
+    <coordinates>
+      <x>90</x>
+      <y>600</y>
+      <w>170</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>setNbAlarmes
+--
+entry/entreeSetNbAlarmes
+exit/indAlarme=0
+BPh/incrNbAlarmes
+BPm/decrNbAlarmes</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>540</y>
+      <w>80</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+BPMenu</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>520</y>
+      <w>160</w>
+      <h>230</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+indAlarme&lt;nbAlarmes</panel_attributes>
+    <additional_attributes>100.0;20.0;50.0;20.0;50.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>550</x>
+      <y>520</y>
+      <w>40</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>type=decision</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>460</x>
+      <y>320</y>
+      <w>130</w>
+      <h>220</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+else</panel_attributes>
+    <additional_attributes>110.0;200.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>670</y>
+      <w>190</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+BPMenu</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>340</x>
+      <y>760</y>
+      <w>150</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+indAlarme&lt;nbAlarmes</panel_attributes>
+    <additional_attributes>30.0;20.0;110.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLSpecialState</id>
+    <coordinates>
+      <x>330</x>
+      <y>760</y>
+      <w>40</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>type=decision</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>340</x>
+      <y>330</y>
+      <w>50</w>
+      <h>450</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;
+else</panel_attributes>
+    <additional_attributes>10.0;430.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
