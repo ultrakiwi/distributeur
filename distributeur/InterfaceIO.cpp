@@ -16,7 +16,7 @@ void InterfaceIO::afficherHeure(int heures, int minutes, int secondes, int ligne
 {
 	m_lcd.setCursor(0, ligne);
 
-	afficherMessage((heures < 10 ? "0" : "") + String(heures) + String(":") +
+	afficherMessage(String(heures < 10 ? "0" : "") + String(heures) + String(":") +
 		(minutes < 10 ? "0" : "") + String(minutes) + ":" +
 		(secondes < 10 ? "0" : "") + String(secondes), ligne);
 }

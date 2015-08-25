@@ -27,13 +27,17 @@
     <ClInclude Include="InterfaceIO.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="distributeur.ino" />
+    <ClInclude Include="Macho.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="InterfaceIO.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Macho.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="distributeur.ino" />
   </ItemGroup>
 </Project>
