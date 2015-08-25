@@ -327,8 +327,6 @@ void incrementerHeure(uint8_t & heure)
 {
 	if (++heure >= 24)
 		heure = 0;
-
-	//Serial.println(heure);
 }
 
 /// Incrémente les minutes en controlant la validité.
@@ -336,8 +334,6 @@ void incrementerMinutes(uint8_t & minutes)
 {
 	if (++minutes >= 60)
 		minutes = 0;
-
-	//Serial.println(minutes);
 }
 
 void reveiller(void)
